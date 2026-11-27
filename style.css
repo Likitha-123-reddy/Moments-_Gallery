@@ -1,0 +1,479 @@
+/* =========================================
+   1. RESET AND GLOBAL STYLES
+   ========================================= */
+
+/* Remove default spacing from all HTML elements */
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Width includes padding and border */
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling when clicking navbar links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Common styles for the entire website */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f7f4;
+    color: #222222;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   2. NAVBAR
+   ========================================= */
+
+.navbar {
+    /* Places logo and navigation side by side */
+    display: flex;
+
+    /* Logo on left, links on right */
+    justify-content: space-between;
+
+    /* Vertically aligns both items */
+    align-items: center;
+
+    /* Space inside navbar */
+    padding: 20px 8%;
+
+    background-color: #ffffff;
+
+    /* Keeps navbar visible while scrolling */
+    position: sticky;
+    top: 0;
+
+    /* Navbar stays above other content */
+    z-index: 100;
+}
+
+/* Website logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #294735;
+}
+
+/* Highlight the dot in the logo */
+.logo span {
+    color: #87a98d;
+}
+
+/* Navigation links container */
+.nav-links {
+    display: flex;
+
+    /* Space between navigation links */
+    gap: 25px;
+}
+
+/* Individual navbar links */
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+
+    /* Smooth hover color change */
+    transition: color 0.3s ease;
+}
+
+/* Navbar hover effect */
+.nav-links a:hover {
+    color: #6d9877;
+}
+
+
+/* =========================================
+   3. HERO SECTION
+   ========================================= */
+
+.hero {
+    /* Minimum height of hero section */
+    min-height: 500px;
+
+    /* Space inside hero */
+    padding: 80px 8%;
+
+    /* Align hero content vertically */
+    display: flex;
+    align-items: center;
+
+    /* Background image and dark overlay */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80");
+
+    /* Fill the hero area with the image */
+    background-size: cover;
+
+    /* Keep the image centered */
+    background-position: center;
+
+    /* Hero text color */
+    color: #ffffff;
+}
+
+/* Hero content container */
+.hero-content {
+    /* Prevent text from becoming too wide */
+    max-width: 650px;
+}
+
+/* Small text above the heading */
+.subtitle {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* Main hero heading */
+.hero h1 {
+    font-size: 54px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Hero description */
+.hero-description {
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+/* Common button styles */
+.hero-btn {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    background-color: #416b52;
+
+    /* Space inside button */
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    /* Smooth hover animation */
+    transition: all 0.3s ease;
+}
+
+/* Button hover */
+.hero-btn:hover {
+    background-color: #294735;
+
+    /* Moves button slightly upward */
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   4. GALLERY SECTION
+   ========================================= */
+
+.gallery-section {
+    padding: 70px 8%;
+}
+
+/* Gallery heading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Small label used in different sections */
+.section-label {
+    color: #668b71;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+/* Gallery title */
+.section-heading h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Gallery heading description */
+.section-heading > p:last-child {
+    color: #777777;
+}
+
+
+/* =========================================
+   5. GALLERY GRID
+   ========================================= */
+
+/* Gallery layout */
+.gallery-grid {
+    display: grid;
+
+    /* Creates 4 equal columns */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Space between cards */
+    gap: 25px;
+}
+
+/* Individual gallery card */
+.gallery-card {
+    background-color: #ffffff;
+
+    /* Rounded corners */
+    border-radius: 12px;
+
+    /* Hides anything outside rounded card */
+    overflow: hidden;
+
+    /* Smooth card animation */
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.gallery-card:hover {
+    /* Move card upward */
+    transform: translateY(-6px);
+
+    /* Add shadow */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Gallery images */
+.gallery-card img {
+    width: 100%;
+    height: 230px;
+
+    /* Prevent images from stretching */
+    object-fit: cover;
+
+    /* Remove inline image gap */
+    display: block;
+
+    /* Smooth image zoom */
+    transition: transform 0.4s ease;
+}
+
+/* Zoom image when hovering over card */
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Text area inside card */
+.card-info {
+    padding: 18px;
+}
+
+/* Card heading */
+.card-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Card description */
+.card-info p {
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   6. ABOUT SECTION
+   ========================================= */
+
+.about-section {
+    background-color: #e9eee9;
+
+    padding: 70px 8%;
+
+    text-align: center;
+}
+
+/* Limits the width of about content */
+.about-content {
+    max-width: 750px;
+
+    /* Center content */
+    margin: 0 auto;
+}
+
+/* About heading */
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   7. CONTACT SECTION
+   ========================================= */
+
+.contact-section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+/* Contact heading */
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+/* Contact description */
+.contact-section > p:not(.section-label) {
+    color: #777777;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   8. FOOTER
+   ========================================= */
+
+.footer {
+    background-color: #253b2f;
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 22px;
+}
+
+
+/* =========================================
+   9. TABLET RESPONSIVE DESIGN
+   Screen width: 1000px or smaller
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    /* Change gallery from 4 columns to 3 columns */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Reduce heading size on medium screens */
+    .hero h1 {
+        font-size: 46px;
+    }
+
+}
+
+
+/* =========================================
+   10. SMALL TABLET RESPONSIVE DESIGN
+   Screen width: 768px or smaller
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Reduce navbar horizontal padding */
+    .navbar {
+        padding: 18px 5%;
+    }
+
+    /* Reduce spacing between navbar links */
+    .nav-links {
+        gap: 15px;
+    }
+
+    /* Show 2 gallery columns */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Reduce hero height and padding */
+    .hero {
+        min-height: 400px;
+        padding: 60px 5%;
+    }
+
+    /* Reduce hero heading size */
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    /* Reduce gallery section padding */
+    .gallery-section {
+        padding: 55px 5%;
+    }
+
+}
+
+
+/* =========================================
+   11. MOBILE RESPONSIVE DESIGN
+   Screen width: 480px or smaller
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    /* Stack logo and navbar vertically */
+    .navbar {
+        flex-direction: column;
+
+        /* Space between logo and links */
+        gap: 15px;
+    }
+
+    /* Allow navbar links to move to next line */
+    .nav-links {
+        flex-wrap: wrap;
+
+        /* Center navigation */
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    /* Smaller navigation text */
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Reduce hero size for mobile */
+    .hero {
+        min-height: 360px;
+        padding: 40px 6%;
+    }
+
+    /* Mobile hero heading */
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    /* Mobile hero description */
+    .hero-description {
+        font-size: 14px;
+    }
+
+    /* Gallery becomes one column */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust mobile image height */
+    .gallery-card img {
+        height: 250px;
+    }
+
+    /* Smaller gallery heading */
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    /* Reduce section spacing */
+    .about-section,
+    .contact-section {
+        padding: 50px 6%;
+    }
+
+}

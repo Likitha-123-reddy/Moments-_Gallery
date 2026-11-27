@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Defines character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title shown in browser tab -->
+    <title>Moments Gallery</title>
+
+    <!-- Connects the HTML file with CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <!-- Website logo and navigation links -->
+    <header class="navbar">
+
+        <div class="logo">Moments<span>.</span></div>
+
+        <!-- Navigation menu -->
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <!-- First section visitors see when opening the website -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="subtitle">CAPTURE THE BEAUTY OF LIFE</p>
+
+            <h1>Every picture tells a story.</h1>
+
+            <p class="hero-description">
+                Discover beautiful landscapes, peaceful moments,
+                nature and unforgettable memories through photography.
+            </p>
+
+            <!-- Button that moves to the gallery section -->
+            <a href="#gallery" class="hero-btn">Explore Gallery</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY SECTION ================= -->
+    <section class="gallery-section" id="gallery">
+
+        <!-- Gallery heading -->
+        <div class="section-heading">
+            <p class="section-label">MY COLLECTION</p>
+            <h2>Explore the Gallery</h2>
+            <p>Explore beautiful moments captured around the world.</p>
+        </div>
+
+
+        <!-- Gallery container -->
+        <!-- CSS Grid will arrange these cards automatically -->
+        <div class="gallery-grid">
+
+
+            <!-- Gallery Card 1 -->
+            <div class="gallery-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                    alt="Mountain landscape">
+
+                <div class="card-info">
+                    <h3>Mountain Escape</h3>
+                    <p>Nature · Travel</p>
+                </div>
+
+            </div>
+
+
+            <!-- Gallery Card 2 -->
+            <div class="gallery-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+                    alt="Beautiful lake">
+
+                <div class="card-info">
+                    <h3>Peaceful Lake</h3>
+                    <p>Nature · Peace</p>
+                </div>
+
+            </div>
+
+
+            <!-- Gallery Card 3 -->
+            <div class="gallery-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=900&q=80"
+                    alt="Green forest">
+
+                <div class="card-info">
+                    <h3>Green Forest</h3>
+                    <p>Nature · Greenery</p>
+                </div>
+
+            </div>
+
+
+            <!-- Gallery Card 4 -->
+            <div class="gallery-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=900&q=80"
+                    alt="Ocean waves">
+
+                <div class="card-info">
+                    <h3>Ocean Waves</h3>
+                    <p>Ocean · Relaxation</p>
+                </div>
+
+            </div>
+
+
+            <!-- Gallery Card 5 -->
+            <div class="gallery-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=900&q=80"
+                    alt="Sunset landscape">
+
+                <div class="card-info">
+                    <h3>Golden Sunset</h3>
+                    <p>Sky · Evening</p>
+                </div>
+
+            </div>
+
+
+            <!-- Gallery Card 6 -->
+            <div class="gallery-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+                    alt="Forest nature">
+
+                <div class="card-info">
+                    <h3>Nature Walk</h3>
+                    <p>Forest · Adventure</p>
+                </div>
+
+            </div>
+
+
+            <!-- Gallery Card 7 -->
+            <div class="gallery-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+                    alt="Mountain lake">
+
+                <div class="card-info">
+                    <h3>Dream Destination</h3>
+                    <p>Travel · Memories</p>
+                </div>
+
+            </div>
+
+
+            <!-- Gallery Card 8 -->
+            <div class="gallery-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+                    alt="Snowy mountain">
+
+                <div class="card-info">
+                    <h3>Snowy Mountains</h3>
+                    <p>Adventure · Winter</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="about-section" id="about">
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT US</p>
+
+            <h2>Photography is a beautiful way to remember life.</h2>
+
+            <p>
+                Moments Gallery is a photography website created to
+                showcase beautiful landscapes, travel destinations,
+                nature and memorable experiences. Our website is designed
+                to provide a clean and enjoyable experience on desktop,
+                tablet and mobile devices.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="contact-section" id="contact">
+
+        <p class="section-label">STAY CONNECTED</p>
+
+        <h2>Thank you for visiting!</h2>
+
+        <p>Explore more beautiful moments and enjoy the journey.</p>
+
+        <!-- Back to top link -->
+        <a href="#home" class="hero-btn">Back to Top</a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <p>© 2026 Moments Gallery. Built with HTML & CSS.</p>
+
+    </footer>
+
+</body>
+</html>
